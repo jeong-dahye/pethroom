@@ -1,0 +1,392 @@
+@charset "utf-8";
+
+/*container*/
+#container{}
+
+/*mainSlider*/
+.mainSlider{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+}
+.mainSlider img{
+    width:95%;
+}
+
+.sliderTxt{
+    position:absolute;
+    right:18%;
+    bottom:80px;
+    text-align:right;
+    font-family:'BinggraeMelona',serif;
+}
+.sliderTxt h2{
+    font-size:60px;
+    color:#113f89;
+    font-family:'BinggraeMelona-Bold',serif;
+    font-weight:normal;
+}
+.sliderTxt p{
+    line-height:36px;
+    font-size:36px;
+    margin-top:20px;
+}
+
+.sliderImg{
+    position:absolute;
+    right:2%;
+    bottom:20px;
+    font-family:'NotoSans',sans-serif;
+}
+.sliderImg li{
+    margin-top:20px;
+    overflow:hidden;
+    background:rgba(17,63,137,1);
+}
+.sliderImg li:hover img{
+    transform:scale(1.5);
+    opacity: .5;
+}
+.sliderImg li a{
+    width:100%;
+    display:block;
+}
+.sliderImg li img{
+    width:100%;
+    transition:transform 1s;
+}
+.sliderImg li:last-child{
+    width:200px;
+    height:200px;
+    border:4px solid #113f89;
+    margin-top:20px;
+    box-sizing:border-box;
+    overflow:hidden;
+    background:none;
+}
+.sliderImg li span{
+    height:100%;
+    display:inline-block;
+    margin-left:20px;
+    margin-top:20px;
+    font-size:22px;
+    color:#113f89;
+}
+.sliderImg li{}
+.sliderImg li img{
+    display:block;
+}
+
+/*mainCon01*/
+.mainCon01{
+    padding-top:200px;
+    margin-bottom:100px;
+    position:relative;
+    text-align:center;
+    background:#FFE79E;
+    color:#113f89;
+}
+
+.con01Tit{
+    font-family:'NotoSans',sans-serif;
+}
+.con01Tit h4{
+    font-size:18px;
+}
+.con01Tit h2{
+    padding-bottom:30px;
+    font-family:'BinggraeMelona-Bold',serif;
+    font-size:60px;
+}
+.con01Tit p{
+    font-size:22px;
+}
+
+.con01Gif{
+    width:800px;
+    height:400px;
+    margin:80px 0 340px;
+    display:inline-block;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+.con01Gif img{
+    height:100%;
+    margin-left:-50px;
+}
+
+.con01Img{
+    position:absolute;
+    bottom:-100px;
+    left:50%;
+    margin-left:-600px;
+    padding:20px 0;
+    overflow:hidden;
+}
+.con01Img li{
+    float:left;
+    margin-right:20px;
+}
+.con01Img li:last-child{
+    margin:0;
+}
+.con01Img li img{
+    border-radius:50%;
+}
+
+/*mainCon02*/
+.mainCon02{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    padding-top:150px;
+    margin-bottom:150px;
+    font-family:'NotoSans',sans-serif; 
+    overflow:hidden;
+}
+.mainCon02 img{}
+
+.con02Txt{
+    position:absolute;
+    bottom:60px;
+    right:50%;
+    margin-right:-700px; 
+    background:#fff;
+    padding:50px 30px;
+    box-shadow:1px 1px 25px rgba(0,0,0,0.2);
+}
+.con02Txt h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+.con02Txt p{
+    font-size:18px;
+}
+
+/*mainCon03*/
+.mainCon03{
+    position:relative;
+    margin-bottom:280px;
+    font-family:'NotoSans',sans-serif;
+}
+.mainCon03 img{float:right;}
+
+.con03Tit{
+    position:absolute;
+    bottom:-100px;
+    left:50%;
+    margin-left:-600px;
+}
+.con03Txt{
+    margin-bottom:60px;
+    padding:30px 0;
+}
+.con03Txt h3{
+    font-size:32px;
+    margin-bottom:20px;
+}
+.con03Txt p{
+    font-size:18px;
+}
+
+.con03Box{
+    width:100%;
+    height:320px;
+    padding:30px 0;
+    overflow:hidden;
+}
+.con03Box li{
+    float:left;
+    margin-right:20px;
+    overflow:hidden;
+}
+.con03Box li a{
+    width:100%;
+    height:100%;
+    display:block;
+}
+.con03Box li img{
+    transition:transform 0.5s;
+}
+.con03Box li:hover img{
+    transform:scale(1.5);
+}
+
+/*mainCon04*/
+.mainCon04{
+    background:#BDF5FF;
+    height:1080px;
+    color:#113f89;
+    margin-bottom:100px;
+    font-family:'BinggraeMelona-Bold',serif;
+}
+
+.mainCon04 .inner{
+    position:relative;
+    z-index:1;
+}
+.moreBtn{
+    width:130px;
+    height:40px;
+    line-height:40px;
+    border:1px solid #113f89;
+    border-radius:50px;
+    margin-left:60px;
+    padding-left:15px;
+    box-sizing:border-box;
+    position:relative;
+    z-index:1;
+}
+.moreBtn a{
+    width:100%;
+    display:block;
+    color:#113f89;
+}
+.arrowBtn{
+    width:48px;
+    height:36px;
+    line-height:38px;
+    border-radius:50px;
+    background:#113f89 url(../images/main/moreBtn.png) no-repeat center center;
+    display:inline-block;
+    vertical-align:top;
+    position:absolute;
+    left:1;
+    top:1;
+    transition:left 0.7s;
+}
+.moreBtn:hover .arrowBtn{
+    left:79px;
+}
+.moreBtn:hover span{
+    color:#113f89;
+}
+.moreBtn span{
+    vertical-align:top;
+    font-family:'NotoSans',sans-serif;
+    font-size:14px;
+    color:rgba(0,0,0,0);
+    transition:color 0.8s;   
+}
+
+.con04Tit{
+    padding-top:200px;
+    margin-left:60px;
+}
+.con04Tit h2{
+    font-size:60px;
+    line-height:60px;
+}
+.con04Tit p{
+    margin-top:20px;
+    margin-bottom:30px;
+    font-family:'NotoSans',sans-serif;
+    font-size:20px;
+}
+
+.con04List{
+    position:absolute;
+    width:100%;
+    height:1200px;
+    top:0;
+    overflow:hidden;
+}
+.con04List li{
+    position:absolute;
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3);
+    transition:transform 1s;
+}
+.con04List li:hover{
+    transform:translateY(-20px);
+    box-shadow:0px 15px 30px -10px rgba(0, 0, 0, 0.3);
+}
+.con04List li a{
+    width:100%;
+    display:block;
+}
+.con04List li img{
+    width:100%;
+}
+.list01{
+    top:330px;
+    left:50%;
+    margin-left:-150px;
+}
+.list02{
+    top:50px;
+    right:60px;
+}
+.list03{
+    top:500px;
+    right:60px;
+}
+.list04{
+    top:780px;
+    left:50%;
+    margin-left:-150px;
+}
+.list05{
+    top:590px;
+    left:60px;
+}
+
+/*mainCon05*/
+.mainCon05{
+    width:100%;
+    overflow:hidden;
+    position:relative;
+    text-align:center;
+    color:#113f89;
+    font-family:'BinggraeMelona-Bold',serif;
+    padding-bottom:50px;
+}
+
+.con05Tit{}
+.con05Tit h2{
+    margin-top:120px;
+    margin-bottom:40px;
+    font-size:60px;
+}
+.con05Tit p{
+    margin-bottom:100px;
+    font-family:'NotoSans',sans-serif;
+    font-size:18px;
+}
+
+.con05List{
+}
+
+.con05List li{
+    width:320px;
+    float:left;
+    margin:30px;
+}
+
+.con05List li a{
+    display:block;
+    width:100%;
+}
+.con05List li img{
+    width:100%;
+}
+
+.btnL,.btnR{
+    position:absolute;
+    top:50%;
+    margin-top:110px;
+    width:60px;
+    height:60px;   
+    cursor:pointer;
+    text-indent:-9999px;
+    background:#113f89 url(../images/main/arrowBtnL.png) no-repeat center center;
+    border-radius:50%;
+}
+.btnL{
+    left:50%;
+    margin-left:-700px;
+}
+.mainCon05 .btnR{
+    background-image:url(../images/main/arrowBtnR.png);
+    right:50%;
+    margin-right:-700px;
+}

@@ -6,11 +6,15 @@
 /*mainSlider*/
 .mainSlider{
     width:100%;
+    height:815px;
     position:relative;
     overflow:hidden;
 }
-.mainSlider img{
-    width:95%;
+.mainSlider>img{
+    height:100%;
+    position:absolute;
+    left:50%;
+    margin-left:-960px;
 }
 
 .sliderTxt{
